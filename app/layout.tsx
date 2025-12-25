@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
-    subsets: ["latin"],
+const satoshi = localFont({
+    src: "./fonts/satoshi/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2",
+    variable: "--font-satoshi",
     display: "swap",
 });
 
