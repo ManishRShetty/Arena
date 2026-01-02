@@ -1,65 +1,75 @@
-# Arena By Manish Shetty
+# Arena
 
-A premium, Apple-inspired portfolio showcase for Arena By Manish Shetty. This project serves as a curated collection of interactive experiences and technical experiments pushing the boundaries of web gaming.
+**A high-performance experimental sandbox for advanced web technologies.**
 
-**Live Demo:** [arena.manishshetty.dev](https://arena.manishshetty.dev)
+Arena serves as a testing ground for pushing the boundaries of the modern web stack. It is not just a portfolio, but a collection of isolated technical experiments demonstrating proficiency in WebGL, Real-time Communication (WebSockets), and Audio Synthesis.
 
-## Features
+**Live Environment:** [arena.manishshetty.dev](https://arena.manishshetty.dev)
 
-- **🍎 Apple-Inspired Design:** A sleek, minimal aesthetic featuring dark mode, glassmorphism, and premium interactions.
-- **🎮 Interactive Game Library:** A showcase of web-based games and experiments.
-- **🎬 Fluid Animations:** Powered by **Framer Motion** for smooth page transitions and modal interactions.
-- **⚡ High Performance:** Built on **Next.js 15** and **React 19** for optimal speed and SEO.
-- **📱 Fully Responsive:** Optimized for all devices, from desktop monitors to mobile phones.
+## 🏗️ Engineering Architecture
 
-## Tech Stack
+This project is built as a **Next.js 15** application utilizing the **App Router** for improved route handling and server-side rendering capabilities.
 
-- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
-- **UI Library:** [React 19](https://react.dev/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Icons:** [Lucide React](https://lucide.dev/)
+-   **Framework**: Next.js 15 (App Router) & React 19
+-   **Language**: TypeScript (Strict Mode enabled)
+-   **Styling**: Tailwind CSS with a modular utility-first approach
+-   **State**: React Server Components (RSC) & Client-side Hooks
 
-## Getting Started
+### Key Technical Implementations
 
-To run this project locally, follow these steps:
+-   **Atomic Component Design**: UI elements are built as pure, stateless functions where possible, promoting reusability and testing.
+-   **Strict Type Safety**: Comprehensive TypeScript interfaces for all data models (e.g., `Game` interfaces) to ensure build-time reliability.
+-   **Optimized Rendering**: Leveraging Next.js 15's partial rendering and image optimization for sub-second First Contentful Paint (FCP).
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/ManishRShetty/Arena.git
-    cd Arena
-    ```
+## 🧪 Experimental Modules
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    # or
-    yarn install
-    # or
-    pnpm install
-    ```
+The core value of this repository lies in the technical implementation of the hosted micro-apps:
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    # or
-    pnpm dev
-    ```
+### 1. Neon Horizon (WebGL / Three.js)
+*Status: Prototype*
+A procedural racing simulation.
+-   **Core Tech**: Three.js, Custom GLSL Shaders.
+-   **Challenge**: Managing high-performance 3D rendering loop within a React lifecycle without memory leaks.
+-   **Implementation**: Utilizes `requestAnimationFrame` outside the React render cycle for stable 60fps performance.
 
-4.  **Open your browser:**
-    Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+### 2. Void Echo (Web Audio API)
+*Status: Experimental*
+A puzzle platformer relying on echolocation.
+-   **Core Tech**: Web Audio API, HTML5 Canvas.
+-   **Challenge**: Spatializing audio in real-time based on 2D vectors.
+-   **Implementation**: Dynamic audio nodes created for each entity, connected to a master gain node for precise volume control.
 
-## Featured Projects
+### 3. Cyber Deck (Complex State / Algorithms)
+*Status: Alpha*
+A deck-building strategy game.
+-   **Core Tech**: TypeScript, Reducer Pattern.
+-   **Challenge**: Handling complex state mutations and turn-based logic.
+-   **Implementation**: Uses a centralized state machine to handle game phases (Draw, Play, Discard, Enemy Turn).
 
-The arena currently features the following experiments:
+### 4. Aether Realms (Real-time Networking)
+*Status: Concept*
+A multiplayer persistent world.
+-   **Core Tech**: WebSockets (Socket.io), Node.js.
+-   **Challenge**: Latency compensation and state synchronization across clients.
+-   **Implementation**: Optimistic UI updates with server reconciliation.
 
-- **Neon Horizon:** A synth-wave racing experience built with Three.js.
-- **Void Echo:** A minimalist puzzle platformer using the Web Audio API.
-- **Cyber Deck:** A strategic card battler with rogue-like elements.
-- **Aether Realms:** A cooperative multiplayer RPG using WebSockets.
+## 🤝 Contribution & Development
 
-## License
+We welcome contributions from the community. Please ensure you follow the engineering standards below.
 
-© 2026 Manish Shetty. All rights reserved.
+### Setup
+```bash
+git clone https://github.com/ManishRShetty/Arena.git
+cd Arena
+npm install
+npm run dev
+```
+
+### Standards
+-   **Linting**: Ensure `npm run lint` passes before pushing.
+-   **Commit Messages**: Use conventional commits (e.g., `feat: add new shader`, `fix: render loop memory leak`).
+-   **Type Checking**: No `any` types allowed. Define interfaces for all props and state.
+
+## ⚖️ License
+
+Private source. Concepts and code snippets available for educational review.
