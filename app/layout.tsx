@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="antialiased">
-            <body className={`${inter.className} bg-black text-white`}>
+            <body className={`${satoshi.className} bg-black text-white`}>
                 {children}
             </body>
         </html>

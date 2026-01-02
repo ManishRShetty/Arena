@@ -68,7 +68,7 @@ export const GameLibrary: React.FC = () => {
     <div className="w-full max-w-[1400px] mx-auto px-6 py-20 lg:px-12">
       {/* Header */}
       <header className="mb-16">
-        <h2 className="text-[#8E8E93] font-medium text-sm tracking-wide uppercase mb-2">Portfolio</h2>
+        {/* <h2 className="text-[#8E8E93] font-medium text-sm tracking-wide uppercase mb-2">Portfolio</h2> */}
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
           Arena By Manish Shetty
         </h1>

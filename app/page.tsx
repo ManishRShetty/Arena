@@ -1,9 +1,11 @@
 import { GameLibrary } from '@/components/GameLibrary';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function Home() {
     return (
         <div className="min-h-screen w-full bg-[#000000] text-white selection:bg-[#0A84FF] selection:text-white">
+            <Header />
             <main className="w-full h-full">
                 <GameLibrary />
                 <Footer />
