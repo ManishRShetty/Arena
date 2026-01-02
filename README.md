@@ -21,39 +21,7 @@ This project is built as a **Next.js 15** application utilizing the **App Router
 -   **Strict Type Safety**: Comprehensive TypeScript interfaces for all data models (e.g., `Game` interfaces) to ensure build-time reliability.
 -   **Optimized Rendering**: Leveraging Next.js 15's partial rendering and image optimization for sub-second First Contentful Paint (FCP).
 
-```
-## 🧪 Experimental Modules
 
-The core value of this repository lies in the technical implementation of the hosted micro-apps:
-
-### 1. Neon Horizon (WebGL / Three.js)
-*Status: Prototype*
-A procedural racing simulation.
--   **Core Tech**: Three.js, Custom GLSL Shaders.
--   **Challenge**: Managing high-performance 3D rendering loop within a React lifecycle without memory leaks.
--   **Implementation**: Utilizes `requestAnimationFrame` outside the React render cycle for stable 60fps performance.
-
-### 2. Void Echo (Web Audio API)
-*Status: Experimental*
-A puzzle platformer relying on echolocation.
--   **Core Tech**: Web Audio API, HTML5 Canvas.
--   **Challenge**: Spatializing audio in real-time based on 2D vectors.
--   **Implementation**: Dynamic audio nodes created for each entity, connected to a master gain node for precise volume control.
-
-### 3. Cyber Deck (Complex State / Algorithms)
-*Status: Alpha*
-A deck-building strategy game.
--   **Core Tech**: TypeScript, Reducer Pattern.
--   **Challenge**: Handling complex state mutations and turn-based logic.
--   **Implementation**: Uses a centralized state machine to handle game phases (Draw, Play, Discard, Enemy Turn).
-
-### 4. Aether Realms (Real-time Networking)
-*Status: Concept*
-A multiplayer persistent world.
--   **Core Tech**: WebSockets (Socket.io), Node.js.
--   **Challenge**: Latency compensation and state synchronization across clients.
--   **Implementation**: Optimistic UI updates with server reconciliation.
-```
 ## 🤝 Contribution & Development
 
 We welcome contributions from the community. Please ensure you follow the engineering standards below.
