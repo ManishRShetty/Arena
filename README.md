@@ -21,6 +21,7 @@ This project is built as a **Next.js 15** application utilizing the **App Router
 -   **Strict Type Safety**: Comprehensive TypeScript interfaces for all data models (e.g., `Game` interfaces) to ensure build-time reliability.
 -   **Optimized Rendering**: Leveraging Next.js 15's partial rendering and image optimization for sub-second First Contentful Paint (FCP).
 
+```
 ## 🧪 Experimental Modules
 
 The core value of this repository lies in the technical implementation of the hosted micro-apps:
@@ -52,7 +53,7 @@ A multiplayer persistent world.
 -   **Core Tech**: WebSockets (Socket.io), Node.js.
 -   **Challenge**: Latency compensation and state synchronization across clients.
 -   **Implementation**: Optimistic UI updates with server reconciliation.
-
+```
 ## 🤝 Contribution & Development
 
 We welcome contributions from the community. Please ensure you follow the engineering standards below.
