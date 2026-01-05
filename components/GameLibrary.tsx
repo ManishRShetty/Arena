@@ -9,44 +9,15 @@ import { Game } from '../types';
 const GAMES: Game[] = [
   {
     id: '1',
-    title: 'Neon Horizon',
-    description: 'A synth-wave racing experience built with Three.js.',
-    longDescription: 'Neon Horizon is a high-octane procedural racing game that pushes the boundaries of WebGL. Experience infinite tracks generated in real-time, accompanied by a reactive synth-wave soundtrack. Features include custom vehicle physics, bloom shaders, and global leaderboards.',
+    title: 'Atlast',
+    description: 'Atlast is a 2D platformer game where you control a character and navigate through a procedurally generated level.',
+    longDescription: 'Atlast is a 2D platformer game where you control a character and navigate through a procedurally generated level.',
     tags: ['WebGL', 'React', 'Three.js'],
     imageUrl: 'https://picsum.photos/id/10/800/600',
     demoLink: '#',
     githubLink: '#'
-  },
-  {
-    id: '2',
-    title: 'Void Echo',
-    description: 'Minimalist puzzle platformer playing with light and sound.',
-    longDescription: 'Traverse a world shrouded in darkness where sound is your only guide. Void Echo utilizes the Web Audio API to create a unique echolocation mechanic. Players must clap, sing, or throw objects to reveal the geometry of the level for a brief moment.',
-    tags: ['Canvas API', 'Web Audio', 'Puzzle'],
-    imageUrl: 'https://picsum.photos/id/16/800/600',
-    demoLink: '#',
-    githubLink: '#'
-  },
-  {
-    id: '3',
-    title: 'Cyber Deck',
-    description: 'Strategic card battler with rogue-like elements.',
-    longDescription: 'Construct the ultimate deck to hack into the megacorp servers. Cyber Deck combines traditional deck-building mechanics with tactical grid-based combat. Every run is unique with over 200 cards and 50 different enemy types.',
-    tags: ['Strategy', 'Rogue-like', 'TypeScript'],
-    imageUrl: 'https://picsum.photos/id/54/800/600',
-    demoLink: '#',
-    githubLink: '#'
-  },
-  {
-    id: '4',
-    title: 'Aether Realms',
-    description: 'Cooperative multiplayer RPG running on WebSockets.',
-    longDescription: 'Join forces with friends in a persistent open world. Aether Realms demonstrates the power of modern WebSockets for real-time multiplayer gaming. Classless progression, crafting systems, and massive boss raids await.',
-    tags: ['Multiplayer', 'Socket.io', 'Node.js'],
-    imageUrl: 'https://picsum.photos/id/28/800/600',
-    demoLink: '#',
-    githubLink: '#'
   }
+
 ];
 
 export const GameLibrary: React.FC = () => {
