@@ -4,21 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Code, X, ChevronRight, Gamepad2 } from 'lucide-react';
 import { Game } from '../types';
+import { GAMES } from '../games';
 
-// Mock Data
-const GAMES: Game[] = [
-  {
-    id: '1',
-    title: 'Atlast',
-    description: 'Atlast is a 2D platformer game where you control a character and navigate through a procedurally generated level.',
-    longDescription: 'Atlast is a 2D platformer game where you control a character and navigate through a procedurally generated level.',
-    tags: ['WebGL', 'React', 'Three.js'],
-    imageUrl: '/games/atlast/atlastcover.webp',
-    demoLink: 'https://atlast.manishshetty.dev',
-    githubLink: 'https://github.com/ManishRShetty/Atlast'
-  }
-
-];
 
 export const GameLibrary: React.FC = () => {
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
