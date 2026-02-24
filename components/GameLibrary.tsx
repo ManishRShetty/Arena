@@ -212,19 +212,25 @@ const GameModal: React.FC<GameModalProps> = ({ game, onClose }) => {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                <button
+                <a
+                  href={game.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 bg-[#0A84FF] hover:bg-[#007aff] text-white font-semibold py-3.5 px-6 rounded-full flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-500/20"
                 >
                   <Play fill="currentColor" size={18} />
                   <span>Play Now</span>
-                </button>
+                </a>
 
-                <button
+                <a
+                  href={game.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 bg-[rgba(255,255,255,0.08)] hover:bg-[rgba(255,255,255,0.12)] text-white font-medium py-3.5 px-6 rounded-full flex items-center justify-center gap-2 transition-all border border-white/5 backdrop-blur-sm transform hover:scale-[1.02] active:scale-[0.98]"
                 >
                   <Code size={18} />
                   <span>View Code</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
